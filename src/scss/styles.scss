@@ -1,6 +1,10 @@
+// Variables
 @import './partials/variables';
 
+// Vendor Styles
+@import '~node-normalize-scss/normalize';
+
+// Custom Styles
 body {
   background-color: $body-background-color;
-  margin: 0;
 }

@@ -92,7 +92,7 @@
 	      return _react2.default.createElement(
 	        "div",
 	        null,
-	        "\"hello\""
+	        "hello"
 	      );
 	    }
 	  }]);
@@ -101,9 +101,9 @@
 	}(_react2.default.Component);
 	
 	exports.default = App;
-	;
 	
-	_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('container'));
+	
+	_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("container"));
 
 /***/ },
 /* 2 */

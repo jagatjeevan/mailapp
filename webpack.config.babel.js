@@ -16,11 +16,11 @@ module.exports = {
   devtool: 'source-map',
   module: {
     preLoaders: [
-      // {
-      //   test: /\.js$/,
-      //   loader: "eslint-loader",
-      //   exclude: /node_modules/
-      // },
+      {
+        test: /\.js$/,
+        loader: "eslint-loader",
+        exclude: /node_modules/
+      },
       {
         test: /.scss$/,
         exclude: /node_modules/,
@@ -40,9 +40,9 @@ module.exports = {
       }
     ]
   },
-  // eslint: {
-  //   configFile: './.eslintrc.json'
-  // },
+  eslint: {
+    configFile: './.eslintrc.json'
+  },
   sasslint: {
     configFile: './.sass-lint.yml'
   },

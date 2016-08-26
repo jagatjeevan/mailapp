@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import '../scss/styles.scss';
+import "../scss/styles.scss";
 
 export default class App extends React.Component {
   render() {
     return(
-      <div>"hello"</div>
+      <div>hello</div>
     );
   }
-};
+}
 
-ReactDOM.render(<App />, document.getElementById('container'));
+ReactDOM.render(<App />, document.getElementById("container"));
