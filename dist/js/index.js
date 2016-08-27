@@ -71,7 +71,7 @@
 	
 	var _homepage2 = _interopRequireDefault(_homepage);
 	
-	__webpack_require__(243);
+	__webpack_require__(244);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -27466,7 +27466,8 @@
 	exports.default = Header;
 
 /***/ },
-/* 243 */
+/* 243 */,
+/* 244 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
