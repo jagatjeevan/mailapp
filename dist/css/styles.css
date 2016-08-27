@@ -1,4 +1,4 @@
-/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
+@import url(/public-assets/font-icons/css/fontello.css);@import url(/public-assets/font-icons/css/animation.css);/*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
@@ -368,7 +368,22 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+#header {
+  background: #369;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  #header .icon-menu {
+    font-size: 25px; }
+  #header a {
+    color: #fff; }
+
 body {
   background-color: #ededed; }
+
+a {
+  text-decoration: none; }
 
 /*# sourceMappingURL=styles.css.map*/

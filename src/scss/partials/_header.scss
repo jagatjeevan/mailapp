@@ -1,0 +1,14 @@
+#header{
+  background: $brand-primary;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .icon-menu{
+    font-size: 25px;
+  }
+  a{
+    color: #fff;
+  }
+}
