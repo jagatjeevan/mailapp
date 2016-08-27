@@ -81,7 +81,7 @@
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
-	  { history: _reactRouter.browserHistory },
+	  { history: newbrowserHistory },
 	  _react2.default.createElement(_reactRouter.Route, { path: _path2.default.homePage, component: _homepage2.default })
 	), document.getElementById('container'));
 

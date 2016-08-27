@@ -13,7 +13,7 @@ import Homepage from './pages/homepage';
 import '../scss/styles.scss';
 
 render((
-  <Router history={browserHistory}>
+  <Router history={newbrowserHistory}>
     <Route path={AppPaths.homePage} component={Homepage} />
   </Router>
 ), document.getElementById('container'));
