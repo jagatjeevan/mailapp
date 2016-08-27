@@ -27104,12 +27104,12 @@
 	}
 	
 	var homePage = '/';
-	var publicPath = '/public-assets/';
+	var publicPath = basePath + '/public-assets/';
 	
 	exports.default = {
-	  publicPath: basePath + publicPath,
+	  publicPath: publicPath,
 	  basePath: basePath,
-	  homePage: basePath + homePage
+	  homePage: homePage
 	};
 
 /***/ },

@@ -6,10 +6,10 @@ if(window.location.hostname.includes('github')){
 }
 
 let homePage = '/';
-let publicPath = '/public-assets/';
+let publicPath = `${basePath}/public-assets/`;
 
 export default {
-  publicPath: basePath + publicPath,
+  publicPath,
   basePath,
-  homePage: basePath + homePage,
+  homePage,
 };
