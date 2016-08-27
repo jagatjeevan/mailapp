@@ -1,3 +1,4 @@
+https://travis-ci.org/jagatjeevan/mailapp.svg?branch=master
 # mailapp
 MailApp UI.
 
