@@ -1,0 +1,18 @@
+// Variables
+@import './partials/variables';
+
+// Vendor Styles
+@import '~node-normalize-scss/normalize';
+@import '~/public-assets/font-icons/css/fontello.css';
+@import '~/public-assets/font-icons/css/animation.css';
+
+// Custom Styles
+@import './partials/header';
+
+body {
+  background-color: $body-background-color;
+}
+
+a {
+  text-decoration: none;
+}
