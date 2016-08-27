@@ -9,7 +9,7 @@ let homePage = '/';
 let publicPath = '/public-assets/';
 
 export default {
-  publicPath,
+  publicPath: basePath + publicPath,
   basePath,
-  homePage,
+  homePage: basePath + homePage,
 };

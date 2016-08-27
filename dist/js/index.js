@@ -27107,9 +27107,9 @@
 	var publicPath = '/public-assets/';
 	
 	exports.default = {
-	  publicPath: publicPath,
+	  publicPath: basePath + publicPath,
 	  basePath: basePath,
-	  homePage: homePage
+	  homePage: basePath + homePage
 	};
 
 /***/ },
