@@ -50,4 +50,5 @@ module.exports = {
     new CleanWebpackPlugin(['dist'], {}),
     new ExtractTextPlugin('../css/styles.css')
   ],
+  watch: serverConfig.watch
 };

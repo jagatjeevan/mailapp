@@ -1,18 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import { render } from 'react-dom';
+import { Router, Route, browserHistory } from 'react-router';
+import AppPaths from './constants/path';
 
-import Header from "./components/header";
+import { createHistory, useBasename } from 'history';
+const newbrowserHistory = useBasename(createHistory)({
+  basename: AppPaths.basePath
+});
 
-import "../scss/styles.scss";
+import Homepage from './pages/homepage';
 
-export default class App extends React.Component {
-  render() {
-    return(
-      <div>
-        <Header />
-      </div>
-    );
-  }
-}
+import '../scss/styles.scss';
 
-ReactDOM.render(<App />, document.getElementById("container"));
+render((
+  <Router history={browserHistory}>
+    <Route path={AppPaths.homePage} component={Homepage} />
+  </Router>
+), document.getElementById('container'));

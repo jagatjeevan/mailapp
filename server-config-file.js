@@ -1,5 +1,5 @@
-let environment = 'dev';// prod
+let environment = 'dev';// prod, dev
 
 export default {
-  "watch": (environment === 'dev') ? true: false
+  "watch": (environment === 'dev') ? true: false,
 }
