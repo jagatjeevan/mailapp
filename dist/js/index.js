@@ -82,6 +82,8 @@
 	var newbrowserHistory = (0, _history.useBasename)(_history.createHistory)({
 	  basename: _path2.default.basePath
 	});
+	console.log(_path2.default.basePath);
+	
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,

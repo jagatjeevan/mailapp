@@ -7,7 +7,7 @@ import { createHistory, useBasename } from 'history';
 const newbrowserHistory = useBasename(createHistory)({
   basename: AppPaths.basePath
 });
-
+console.log(AppPaths.basePath);
 import Homepage from './pages/homepage';
 import About from './pages/about';
 
