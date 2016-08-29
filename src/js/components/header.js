@@ -1,15 +1,39 @@
 import React from 'react';
-// import { Link } from 'react-router';
+import { Link } from 'react-router';
 import AppPaths from '../constants/path';
 
-// <Link to={AppPaths.homePage}>Home</Link>
-
 export default class Header extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isNavBarOpen: false
+    };
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+  }
+  toggleNavbar() {
+    this.setState({
+      isNavBarOpen: !this.state.isNavBarOpen
+    });
+  }
   render() {
+    const navbarClassName = (this.state.isNavBarOpen) ? 'opened' : 'closed';
+    const iconMenuClass = (this.state.isNavBarOpen) ? 'menu-switch icon-cancel' : 'menu-switch icon-menu';
     return (
       <header id='header'>
-        <img src={`${AppPaths.publicPath}img/logo.jpeg`} />
-        <i className='icon-menu'></i>
+        <div className="logo-container">
+          <img src={`${AppPaths.publicPath}img/logo.jpeg`} />
+          <i className={iconMenuClass} onClick={this.toggleNavbar}></i>
+        </div>
+        <nav className={navbarClassName}>
+          <ul>
+            <li key="home">
+              <Link to={AppPaths.homePage}>Home</Link>
+            </li>
+            <li key="about">
+              <Link to={AppPaths.aboutPage}>About</Link>
+            </li>
+          </ul>
+        </nav>
       </header>
     );
   }

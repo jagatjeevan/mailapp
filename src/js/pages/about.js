@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Header from '../components/header';
 
-export default class App extends React.Component {
+export default class About extends React.Component {
   render() {
     return(
       <div>
@@ -13,4 +13,4 @@ export default class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('container'));
+ReactDOM.render(<About />, document.getElementById('container'));

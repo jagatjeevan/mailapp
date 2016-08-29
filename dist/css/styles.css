@@ -368,22 +368,63 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-#header {
+@keyframes slideUp {
+  from {
+    height: auto;
+    display: block; }
+  to {
+    height: 0;
+    display: none;
+    overflow: hidden; } }
+
+@keyframes slideDown {
+  from {
+    height: 0;
+    display: none;
+    overflow: hidden; }
+  to {
+    height: auto;
+    display: block; } }
+
+#header .logo-container {
+  align-items: center;
   background: #369;
   color: #fff;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
-  #header .icon-menu {
-    font-size: 25px; }
-  #header a {
-    color: #fff; }
+  padding: 15px; }
+
+#header nav {
+  background: #4080bf; }
+  #header nav.closed {
+    display: none; }
+
+#header li a {
+  border-bottom: #369 solid 1px;
+  display: block;
+  padding: 10px; }
+  #header li a:hover {
+    background: #3973ac; }
+
+#header .menu-switch {
+  font-size: 25px; }
+
+#header a {
+  color: #fff; }
 
 body {
   background-color: #ededed; }
 
 a {
   text-decoration: none; }
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+[class^='icon'] {
+  cursor: pointer; }
 
 /*# sourceMappingURL=styles.css.map*/

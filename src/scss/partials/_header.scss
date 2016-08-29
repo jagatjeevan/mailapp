@@ -1,14 +1,38 @@
 #header{
-  background: $brand-primary;
-  color: #fff;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  .icon-menu{
+
+  .logo-container{
+    align-items: center;
+    background: $brand-primary;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  nav {
+    background: lighten($brand-primary, 10%);
+    &.closed {
+      display: none;
+    }
+  }
+
+  li{
+    a {
+      border-bottom: $brand-primary solid 1px;
+      display: block;
+      padding: 10px;
+      &:hover {
+        background: lighten($brand-primary, 5%);
+      }
+    }
+  }
+
+  .menu-switch{
     font-size: 25px;
   }
+
   a{
     color: #fff;
   }
+
 }

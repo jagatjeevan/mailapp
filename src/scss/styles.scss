@@ -6,6 +6,9 @@
 @import '~/public-assets/font-icons/css/fontello.css';
 @import '~/public-assets/font-icons/css/animation.css';
 
+// Animations
+@import './animations/animation';
+
 // Custom Styles
 @import './partials/header';
 
@@ -15,4 +18,15 @@ body {
 
 a {
   text-decoration: none;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+[class^='icon'] {
+  cursor: pointer;
 }
