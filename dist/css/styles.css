@@ -417,21 +417,30 @@ textarea {
   color: #fff; }
 
 .search-bar {
-  display: flex;
+  background: #4080bf;
   padding: 20px;
-  background: #4080bf; }
-  .search-bar input[type='text'] {
+  color: #fff; }
+
+.search-component {
+  display: flex;
+  margin-bottom: 15px; }
+  .search-component input[type='text'] {
     flex-grow: 1;
     padding: 10px 15px;
     color: #666;
     border: #666 solid 1px; }
-  .search-bar button {
+  .search-component button {
     background: #369;
     border: 0;
     padding: 10px 15px;
     color: #fff; }
-    .search-bar button .icon-search {
+    .search-component button .icon-search {
       margin-right: 5px; }
+
+.filters {
+  display: flex; }
+  .filters .filter {
+    padding-right: 30px; }
 
 body {
   background-color: #ededed; }

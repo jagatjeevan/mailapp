@@ -1,7 +1,12 @@
 .search-bar{
-  display: flex;
-  padding: $app-padding;
   background: lighten($brand-primary, 10%);
+  padding: $app-padding;
+  color: #fff;
+}
+
+.search-component{
+  display: flex;
+  margin-bottom: 15px;
   input[type='text'] {
     flex-grow: 1;
     padding: 10px 15px;
@@ -16,5 +21,12 @@
     .icon-search{
       margin-right: 5px;
     }
+  }
+}
+
+.filters{
+  display: flex;
+  .filter {
+    padding-right: 30px;
   }
 }
