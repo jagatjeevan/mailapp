@@ -8,6 +8,7 @@ export default class About extends React.Component {
     return(
       <div>
         <Header />
+        Add your parcel here
       </div>
     );
   }
