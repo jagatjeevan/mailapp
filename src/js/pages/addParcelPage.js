@@ -9,8 +9,6 @@ export default class About extends React.Component {
     return(
       <div>
         <Header />
-        <SearchBar />
-        Add your parcel here
       </div>
     );
   }

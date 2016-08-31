@@ -27577,9 +27577,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_header2.default, null),
-	        _react2.default.createElement(_searchBar2.default, null),
-	        'Add your parcel here'
+	        _react2.default.createElement(_header2.default, null)
 	      );
 	    }
 	  }]);
