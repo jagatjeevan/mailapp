@@ -1,12 +1,16 @@
-#header{
+$header-background: $brand-primary;
+$navigation-anchor-background: lighten($header-background, 10%);
+$navigation-anchor-background-hover: lighten($brand-primary, 5%);
+$navigation-anchor-background-active: $brand-secondary;
 
+#header{
   .logo-container{
     align-items: center;
-    background: $brand-primary;
+    background: $header-background;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: $app-padding;
   }
 
   nav {
@@ -17,18 +21,18 @@
 
   li{
     a {
-      background: lighten($brand-primary, 10%);
-      border-bottom: $brand-primary solid 1px;
-      border-right: lighten($brand-primary, 10%) solid 5px;
+      background: $navigation-anchor-background;
+      border-bottom: $header-background solid 1px;
+      border-right: $navigation-anchor-background solid 5px;
       display: block;
-      padding: 15px;
+      padding: 10px;
       text-align: right;
       &:hover {
-        background: lighten($brand-primary, 5%);
-        border-right-color: lighten($brand-primary, 5%);
+        background: $navigation-anchor-background-hover;
+        border-right-color: $navigation-anchor-background-hover;
       }
       &.active {
-        border-right-color: $brand-secondary;
+        border-right-color: $navigation-anchor-background-active;
       }
     }
   }
