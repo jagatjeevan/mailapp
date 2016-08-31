@@ -53,10 +53,6 @@
 
 	'use strict';
 	
-	var _react = __webpack_require__(2);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
 	var _reactDom = __webpack_require__(35);
 	
 	var _reactRouter = __webpack_require__(173);
@@ -71,9 +67,9 @@
 	
 	var _homepage2 = _interopRequireDefault(_homepage);
 	
-	var _about = __webpack_require__(243);
+	var _addParcelPage = __webpack_require__(243);
 	
-	var _about2 = _interopRequireDefault(_about);
+	var _addParcelPage2 = _interopRequireDefault(_addParcelPage);
 	
 	__webpack_require__(244);
 	
@@ -85,11 +81,15 @@
 	console.log(_path2.default.basePath);
 	
 	
-	(0, _reactDom.render)(_react2.default.createElement(
-	  _reactRouter.Router,
-	  { history: newbrowserHistory },
-	  _react2.default.createElement(_reactRouter.Route, { path: _path2.default.homePage, component: _homepage2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: _path2.default.aboutPage, component: _about2.default })
+	(0, _reactDom.render)(React.createElement(
+	  'div',
+	  { className: 'app-contianer' },
+	  React.createElement(
+	    _reactRouter.Router,
+	    { history: newbrowserHistory },
+	    React.createElement(_reactRouter.Route, { path: _path2.default.homePage, component: _homepage2.default }),
+	    React.createElement(_reactRouter.Route, { path: _path2.default.addParcelPage, component: _addParcelPage2.default })
+	  )
 	), document.getElementById('container'));
 
 /***/ },
@@ -27112,13 +27112,13 @@
 	
 	var publicPath = basePath + '/public-assets/';
 	var homePage = '/';
-	var aboutPage = '/about';
+	var addParcelPage = '/addParcel';
 	
 	exports.default = {
 	  publicPath: publicPath,
 	  basePath: basePath,
 	  homePage: homePage,
-	  aboutPage: aboutPage
+	  addParcelPage: addParcelPage
 	};
 
 /***/ },
@@ -27494,7 +27494,7 @@
 	              _react2.default.createElement(
 	                _reactRouter.Link,
 	                { to: _path2.default.homePage },
-	                'Home'
+	                'List Parcels'
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -27502,8 +27502,8 @@
 	              { key: 'about' },
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { to: _path2.default.aboutPage },
-	                'About'
+	                { to: _path2.default.addParcelPage },
+	                'Add Parcel'
 	              )
 	            )
 	          )
@@ -27564,7 +27564,8 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_header2.default, null)
+	        _react2.default.createElement(_header2.default, null),
+	        'Add your parcel here'
 	      );
 	    }
 	  }]);
