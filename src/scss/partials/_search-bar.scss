@@ -1,0 +1,20 @@
+.search-bar{
+  display: flex;
+  padding: $app-padding;
+  background: lighten($brand-primary, 10%);
+  input[type='text'] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    color: #666;
+    border: #666 solid 1px;
+  }
+  button {
+    background: $brand-primary;
+    border: 0;
+    padding: 10px 15px;
+    color: #fff;
+    .icon-search{
+      margin-right: 5px;
+    }
+  }
+}

@@ -392,7 +392,7 @@ textarea {
   color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 15px; }
+  padding: 20px; }
 
 #header nav.closed {
   display: none; }
@@ -402,7 +402,7 @@ textarea {
   border-bottom: #369 solid 1px;
   border-right: #4080bf solid 5px;
   display: block;
-  padding: 15px;
+  padding: 10px;
   text-align: right; }
   #header li a:hover {
     background: #3973ac;
@@ -415,6 +415,23 @@ textarea {
 
 #header a {
   color: #fff; }
+
+.search-bar {
+  display: flex;
+  padding: 20px;
+  background: #4080bf; }
+  .search-bar input[type='text'] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    color: #666;
+    border: #666 solid 1px; }
+  .search-bar button {
+    background: #369;
+    border: 0;
+    padding: 10px 15px;
+    color: #fff; }
+    .search-bar button .icon-search {
+      margin-right: 5px; }
 
 body {
   background-color: #ededed; }
