@@ -17,16 +17,6 @@ export default class SearchBar extends React.Component {
               <input type='checkbox' value='delivered' /> Delivered
             </label>
           </div>
-          <div className='filter'>
-            <label>
-              <input type='checkbox' value='undelivered' /> Undelivered
-            </label>
-          </div>
-          <div className='filter'>
-            <label>
-              <input type='checkbox' value='all' /> All
-            </label>
-          </div>
         </div>
       </div>
     );

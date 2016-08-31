@@ -27661,26 +27661,6 @@
 	              _react2.default.createElement('input', { type: 'checkbox', value: 'delivered' }),
 	              ' Delivered'
 	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'filter' },
-	            _react2.default.createElement(
-	              'label',
-	              null,
-	              _react2.default.createElement('input', { type: 'checkbox', value: 'undelivered' }),
-	              ' Undelivered'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'filter' },
-	            _react2.default.createElement(
-	              'label',
-	              null,
-	              _react2.default.createElement('input', { type: 'checkbox', value: 'all' }),
-	              ' All'
-	            )
 	          )
 	        )
 	      );
