@@ -10,7 +10,6 @@
   }
 
   nav {
-    background: lighten($brand-primary, 10%);
     &.closed {
       display: none;
     }
@@ -18,12 +17,18 @@
 
   li{
     a {
+      background: lighten($brand-primary, 10%);
       border-bottom: $brand-primary solid 1px;
+      border-right: lighten($brand-primary, 10%) solid 5px;
       display: block;
       padding: 15px;
       text-align: right;
       &:hover {
         background: lighten($brand-primary, 5%);
+        border-right-color: lighten($brand-primary, 5%);
+      }
+      &.active {
+        border-right-color: $brand-secondary;
       }
     }
   }

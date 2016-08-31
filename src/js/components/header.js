@@ -27,10 +27,10 @@ export default class Header extends React.Component {
         <nav className={navbarClassName}>
           <ul>
             <li key="home">
-              <Link to={AppPaths.homePage}>List Parcels</Link>
+              <Link to={AppPaths.homePage} activeClassName="active">List Parcels</Link>
             </li>
             <li key="about">
-              <Link to={AppPaths.addParcelPage}>Add Parcel</Link>
+              <Link to={AppPaths.addParcelPage} activeClassName="active">Add Parcel</Link>
             </li>
           </ul>
         </nav>

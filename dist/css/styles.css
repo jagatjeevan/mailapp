@@ -394,18 +394,21 @@ textarea {
   justify-content: space-between;
   padding: 15px; }
 
-#header nav {
-  background: #4080bf; }
-  #header nav.closed {
-    display: none; }
+#header nav.closed {
+  display: none; }
 
 #header li a {
+  background: #4080bf;
   border-bottom: #369 solid 1px;
+  border-right: #4080bf solid 5px;
   display: block;
   padding: 15px;
   text-align: right; }
   #header li a:hover {
-    background: #3973ac; }
+    background: #3973ac;
+    border-right-color: #3973ac; }
+  #header li a.active {
+    border-right-color: #FFAD23; }
 
 #header .menu-switch {
   font-size: 25px; }
