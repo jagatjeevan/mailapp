@@ -1,0 +1,43 @@
+$name-card-background: darken(map-get($brand-colors, quinary), 5%);
+$name-card-padding: map-get($spacer, spacer-10);
+$name-card-image-spacing: $name-card-padding;
+$name-card-name-phone-number-spacing: $name-card-padding 0 0;
+
+.parcel-card-container {
+  display: flex;
+  margin: $app-spacer;
+}
+.name-card{
+  background: $name-card-background;
+  border: $box-border;
+  padding: $box-padding;
+}
+.reciever-detail {
+  display: flex;
+  margin-bottom: 10px;
+  .profile-image {
+    margin-right: $name-card-image-spacing;
+    img{
+      border-radius: 50%;
+      border: $box-border;
+    }
+  }
+  .name-and-phone-number {
+    span{
+      display: block;
+      padding: $name-card-name-phone-number-spacing;
+    }
+  }
+}
+.sender-detail {
+  display: flex;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  span,
+  b {
+    flex-grow: 1;
+    width: 50%;
+  }
+}

@@ -1,8 +1,30 @@
-$body-background-color: #ededed;
+$brand-colors: (
+  primary: #369,
+  secondary: #FFAD23,
+  teriary: #999,
+  quaternary: #ccc,
+  quinary: #eee,
+  senary: #efefef
+);
+$body-background-color: map-get($brand-colors, 'senary');
 
-$brand-primary: #369;
-$brand-secondary: #FFAD23;
+$spacer: (
+  spacer-5: 5px,
+  spacer-10: 10px,
+  spacer-20: 20px,
+  spacer-50: 50px,
+);
 
-$app-padding: 20px;
+$app-spacer : map-get($spacer, 'spacer-20');
 
 $app-animation-duration: 5ms;
+
+// Box
+$box-background-color: map-get($brand-colors, 'quinary-color');
+
+$box-border-color: map-get($brand-colors, 'quinary-color');
+$box-border-width: 1px;
+$box-border: $box-border-color solid $box-border-width;
+
+$box-padding: map-get($spacer, 'spacer-10');
+// Box

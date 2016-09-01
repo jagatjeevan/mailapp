@@ -64,11 +64,11 @@
 
 	var _homepage2 = _interopRequireDefault(_homepage);
 
-	var _addParcelPage = __webpack_require__(243);
+	var _addParcelPage = __webpack_require__(244);
 
 	var _addParcelPage2 = _interopRequireDefault(_addParcelPage);
 
-	__webpack_require__(244);
+	__webpack_require__(245);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -27381,6 +27381,10 @@
 
 	var _searchBar2 = _interopRequireDefault(_searchBar);
 
+	var _parcelCard = __webpack_require__(243);
+
+	var _parcelCard2 = _interopRequireDefault(_parcelCard);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27405,7 +27409,8 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_header2.default, null),
-	        _react2.default.createElement(_searchBar2.default, null)
+	        _react2.default.createElement(_searchBar2.default, null),
+	        _react2.default.createElement(_parcelCard2.default, null)
 	      );
 	    }
 	  }]);
@@ -27622,6 +27627,140 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _path = __webpack_require__(235);
+
+	var _path2 = _interopRequireDefault(_path);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ParcelCard = function (_React$Component) {
+	  _inherits(ParcelCard, _React$Component);
+
+	  function ParcelCard() {
+	    _classCallCheck(this, ParcelCard);
+
+	    return _possibleConstructorReturn(this, (ParcelCard.__proto__ || Object.getPrototypeOf(ParcelCard)).apply(this, arguments));
+	  }
+
+	  _createClass(ParcelCard, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'parcel-card-container' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'name-card' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'reciever-detail' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'profile-image' },
+	              _react2.default.createElement('img', { src: _path2.default.publicPath + 'img/logo.jpeg', width: '70', height: '70', className: 'img-circle' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'name-and-phone-number' },
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  'b',
+	                  null,
+	                  'Jagat Jeevan Sahoo'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                '+91 - 9740970977'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Name: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Amazon'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Date recieved: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              '10',
+	              _react2.default.createElement(
+	                'sup',
+	                null,
+	                'th'
+	              ),
+	              ' April 2016'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Packet No.: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Y1M2E1748'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ParcelCard;
+	}(_react2.default.Component);
+
+	exports.default = ParcelCard;
+
+/***/ },
+/* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	var _reactDom = __webpack_require__(34);
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
@@ -27671,7 +27810,7 @@
 	_reactDom2.default.render(_react2.default.createElement(About, null), document.getElementById('container'));
 
 /***/ },
-/* 244 */
+/* 245 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin

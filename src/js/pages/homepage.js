@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Header from '../components/header';
 import SearchBar from '../components/searchBar';
+import ParcelCard from '../components/parcelCard';
 
 export default class App extends React.Component {
   render() {
@@ -10,6 +11,7 @@ export default class App extends React.Component {
       <div>
         <Header />
         <SearchBar />
+        <ParcelCard />
       </div>
     );
   }

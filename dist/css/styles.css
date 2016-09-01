@@ -417,8 +417,8 @@ textarea {
 #header .menu-links {
   display: none; }
   #header .menu-links a {
-    padding: 5px 0;
-    margin-left: 30px; }
+    margin-left: 30px;
+    padding: 5px 0; }
     #header .menu-links a.active {
       border-bottom: #FFAD23 solid 3px; }
 
@@ -433,36 +433,63 @@ textarea {
 
 .search-bar {
   background: #4080bf;
-  padding: 20px;
-  color: #fff; }
+  color: #fff;
+  padding: 20px; }
 
 .search-component {
   display: flex;
   margin-bottom: 15px; }
   .search-component input[type='text'] {
-    flex-grow: 1;
-    padding: 10px 15px;
+    border: #666 solid 1px;
     color: #666;
-    border: #666 solid 1px; }
-  .search-component button {
-    background: #369;
-    border: 0;
-    padding: 10px 15px;
-    color: #fff; }
-    .search-component button .icon-search {
-      margin-right: 5px; }
+    flex-grow: 1;
+    padding: 10px 15px; }
+  .search-component button .icon-search {
+    margin-right: 5px; }
 
 .filters {
   display: flex; }
   .filters .filter {
     padding-right: 30px; }
 
+.parcel-card-container {
+  display: flex;
+  margin: 20px; }
+
+.name-card {
+  background: #e1e1e1;
+  border: solid 1px;
+  padding: 10px; }
+
+.reciever-detail {
+  display: flex;
+  margin-bottom: 10px; }
+  .reciever-detail .profile-image {
+    margin-right: 10px; }
+    .reciever-detail .profile-image img {
+      border-radius: 50%;
+      border: solid 1px; }
+  .reciever-detail .name-and-phone-number span {
+    display: block;
+    padding: 10px 0 0; }
+
+.sender-detail {
+  display: flex;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px; }
+  .sender-detail span,
+  .sender-detail b {
+    flex-grow: 1;
+    width: 50%; }
+
 html,
 body {
   height: 100%; }
 
 body {
-  background-color: #ededed; }
+  background-color: #efefef; }
 
 a {
   text-decoration: none; }
@@ -475,3 +502,9 @@ li {
 
 [class^='icon'] {
   cursor: pointer; }
+
+button {
+  background-color: #369;
+  border: 0;
+  color: #fff;
+  padding: 10px 15px; }

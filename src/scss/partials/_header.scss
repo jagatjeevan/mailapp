@@ -1,8 +1,8 @@
-$header-background: $brand-primary;
+$header-background: map-get($brand-colors, primary);
 $navigation-anchor-background: lighten($header-background, 10%);
-$navigation-anchor-background-hover: lighten($brand-primary, 5%);
-$navigation-anchor-background-active: $brand-secondary;
-
+$navigation-anchor-background-hover: lighten($header-background, 5%);
+$navigation-anchor-background-active: map-get($brand-colors, secondary);
+$navigation-achor-text-color: #fff;
 #header{
   .logo-container{
     align-items: center;
@@ -10,7 +10,7 @@ $navigation-anchor-background-active: $brand-secondary;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: $app-padding;
+    padding: $app-spacer;
   }
 
   nav {
@@ -44,8 +44,8 @@ $navigation-anchor-background-active: $brand-secondary;
   .menu-links {
     display: none;
     a{
-      padding: 5px 0;
       margin-left: 30px;
+      padding: 5px 0;
       &.active {
         border-bottom: $navigation-anchor-background-active solid 3px;
       }
@@ -61,10 +61,7 @@ $navigation-anchor-background-active: $brand-secondary;
   }
 
   a{
-    color: #fff;
+    color: $navigation-achor-text-color;
   }
 
 }
-
-
-
