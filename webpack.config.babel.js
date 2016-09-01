@@ -6,14 +6,13 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import path from 'path';
 
 module.exports = {
-  entry: [
-    "./src/js/index.js"
-  ],
+  context: __dirname,
+  entry: "./src/js/index.js",
   output: {
+    path: __dirname + "/dist/js",
     filename: "index.js",
-    path: "./dist/js",
   },
-  devtool: 'source-map',
+  devtool: (serverConfig.environment == 'dev') ? 'source-map' : '',
   module: {
     preLoaders: [
       {

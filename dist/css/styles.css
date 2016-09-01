@@ -411,7 +411,22 @@ textarea {
     border-right-color: #FFAD23; }
 
 #header .menu-switch {
-  font-size: 25px; }
+  font-size: 25px;
+  display: block; }
+
+#header .menu-links {
+  display: none; }
+  #header .menu-links a {
+    padding: 5px 0;
+    margin-left: 30px; }
+    #header .menu-links a.active {
+      border-bottom: #FFAD23 solid 3px; }
+
+@media only screen and (min-width: 700px) {
+  #header .menu-links {
+    display: block; }
+  #header .menu-switch {
+    display: none; } }
 
 #header a {
   color: #fff; }
@@ -442,6 +457,10 @@ textarea {
   .filters .filter {
     padding-right: 30px; }
 
+html,
+body {
+  height: 100%; }
+
 body {
   background-color: #ededed; }
 
@@ -456,5 +475,3 @@ li {
 
 [class^='icon'] {
   cursor: pointer; }
-
-/*# sourceMappingURL=styles.css.map*/

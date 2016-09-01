@@ -11,6 +11,11 @@
 @import './partials/header';
 @import './partials/search-bar';
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-color: $body-background-color;
 }
