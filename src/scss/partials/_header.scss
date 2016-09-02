@@ -3,22 +3,21 @@ $navigation-anchor-background: lighten($header-background, 10%);
 $navigation-anchor-background-hover: lighten($header-background, 5%);
 $navigation-anchor-background-active: map-get($brand-colors, secondary);
 $navigation-achor-text-color: #fff;
+
 #header{
   .logo-container{
     align-items: center;
     background: $header-background;
-    color: #fff;
+    color: $navigation-achor-text-color;
     display: flex;
     justify-content: space-between;
     padding: $app-spacer;
   }
-
   nav {
     &.closed {
       display: none;
     }
   }
-
   li{
     a {
       background: $navigation-anchor-background;
@@ -36,7 +35,6 @@ $navigation-achor-text-color: #fff;
       }
     }
   }
-
   .menu-switch{
     font-size: 25px;
     display: block;
@@ -59,9 +57,7 @@ $navigation-achor-text-color: #fff;
       display: none;
     }
   }
-
   a{
     color: $navigation-achor-text-color;
   }
-
 }

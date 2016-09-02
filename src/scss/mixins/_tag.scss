@@ -1,0 +1,15 @@
+$tag-background: #fff;
+%tag {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  &:before {
+    background: $tag-background;
+    content: '';
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg) translateY(10px);
+    width: 430%;
+    z-index: 1;
+  }
+}

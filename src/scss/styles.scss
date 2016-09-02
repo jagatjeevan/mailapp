@@ -1,5 +1,6 @@
 // Variables
-@import './partials/variables';
+@import './variables';
+@import './mixins/mixins';
 
 // Vendor Styles
 @import '~node-normalize-scss/normalize';
@@ -8,9 +9,7 @@
 @import './animations/animation';
 
 // Custom Styles
-@import './partials/header';
-@import './partials/search-bar';
-@import './partials/parcel-card';
+@import './partials/partials';
 
 html,
 body {
@@ -36,9 +35,10 @@ li {
   cursor: pointer;
 }
 
+$button-text-color: #fff;
 button {
   background-color: map-get($brand-colors, primary);
   border: 0;
-  color: #fff;
+  color: $button-text-color;
   padding: 10px 15px;
 }

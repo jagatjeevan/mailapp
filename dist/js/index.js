@@ -27735,6 +27735,93 @@
 	              'Y1M2E1748'
 	            )
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'name-card' },
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'status' },
+	            _react2.default.createElement('i', { className: 'icon-ok' })
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'reciever-detail' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'profile-image' },
+	              _react2.default.createElement('img', { src: _path2.default.publicPath + 'img/logo.jpeg', width: '70', height: '70', className: 'img-circle' })
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'name-and-phone-number' },
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                _react2.default.createElement(
+	                  'b',
+	                  null,
+	                  'Jagat Jeevan Sahoo'
+	                )
+	              ),
+	              _react2.default.createElement(
+	                'span',
+	                null,
+	                '+91 - 9740970977'
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Name: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Amazon'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Date recieved: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              '10',
+	              _react2.default.createElement(
+	                'sup',
+	                null,
+	                'th'
+	              ),
+	              ' April 2016'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Packet No.: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Y1M2E1748'
+	            )
+	          )
 	        )
 	      );
 	    }

@@ -6,11 +6,23 @@ $name-card-name-phone-number-spacing: $name-card-padding 0 0;
 .parcel-card-container {
   display: flex;
   margin: $app-spacer;
+  justify-content: flex-start;
 }
-.name-card{
+.name-card {
   background: $name-card-background;
   border: $box-border;
   padding: $box-padding;
+  margin: 0 20px 20px 0;
+  position: relative;
+  overflow: hidden;
+  .status {
+    @extend %tag;
+    .icon-ok{
+      position: relative;
+      z-index: 2;
+      color: green;
+    }
+  }
 }
 .reciever-detail {
   display: flex;

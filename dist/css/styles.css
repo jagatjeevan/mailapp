@@ -1,3 +1,16 @@
+.name-card .status {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  .name-card .status:before {
+    background: #fff;
+    content: '';
+    height: 300%;
+    position: absolute;
+    transform: rotate(45deg) translateY(10px);
+    width: 430%;
+    z-index: 1; }
+
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -454,12 +467,20 @@ textarea {
 
 .parcel-card-container {
   display: flex;
-  margin: 20px; }
+  margin: 20px;
+  justify-content: flex-start; }
 
 .name-card {
   background: #e1e1e1;
   border: solid 1px;
-  padding: 10px; }
+  padding: 10px;
+  margin: 0 20px 20px 0;
+  position: relative;
+  overflow: hidden; }
+  .name-card .status .icon-ok {
+    position: relative;
+    z-index: 2;
+    color: green; }
 
 .reciever-detail {
   display: flex;
