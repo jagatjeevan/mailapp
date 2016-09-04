@@ -24,12 +24,12 @@ input [type='number'] {
 @font-face {
   font-family: 'PT_Sans-Narrow';
   font-weight: normal;
-  src: url("/public-assets/font/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf"); }
+  src: url("/mailapp/public-assets/font/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf"); }
 
 @font-face {
   font-family: 'PT_Sans-Narrow';
   font-weight: bold;
-  src: url("/public-assets/font/PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf"); }
+  src: url("/mailapp/public-assets/font/PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf"); }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**

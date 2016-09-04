@@ -83,7 +83,7 @@
 	  { className: 'app-contianer' },
 	  _react2.default.createElement(
 	    _reactRouter.Router,
-	    { history: _reactRouter.browserHistory },
+	    { history: newbrowserHistory },
 	    _react2.default.createElement(_reactRouter.Route, { path: _path2.default.homePage, component: _homepage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: _path2.default.addParcelPage, component: _addParcelPage2.default })
 	  )

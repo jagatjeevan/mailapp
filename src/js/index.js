@@ -15,7 +15,7 @@ import '../scss/styles.scss';
 
 render((
   <div className="app-contianer">
-    <Router history={browserHistory}>
+    <Router history={newbrowserHistory}>
       <Route path={AppPaths.homePage} component={Homepage} />
       <Route path={AppPaths.addParcelPage} component={addParcelPage} />
     </Router>
