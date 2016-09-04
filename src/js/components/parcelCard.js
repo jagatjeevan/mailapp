@@ -25,10 +25,10 @@ export default class ParcelCard extends React.Component {
             <span>Date dispatched: </span> <b>Not Dispatched</b>
           </div>
           <div className='sender-detail'>
-            <span>Name: </span> <b>Amazon</b>
+            <span>Date recieved: </span> <b>10<sup>th</sup> April 2016</b>
           </div>
           <div className='sender-detail'>
-            <span>Date recieved: </span> <b>10<sup>th</sup> April 2016</b>
+            <span>Name: </span> <b>Amazon</b>
           </div>
         </div>
         <div className='name-card'>
@@ -51,17 +51,13 @@ export default class ParcelCard extends React.Component {
             <span>Date dispatched: </span> <b>20<sup>th</sup> April 2016</b>
           </div>
           <div className='sender-detail'>
-            <span>Name: </span> <b>Flipkart</b>
+            <span>Date recieved: </span> <b>10<sup>th</sup> April 2016</b>
           </div>
           <div className='sender-detail'>
-            <span>Date recieved: </span> <b>10<sup>th</sup> April 2016</b>
+            <span>Name: </span> <b>Flipkart</b>
           </div>
         </div>
       </div>
     );
   }
 }
-
-
-
-

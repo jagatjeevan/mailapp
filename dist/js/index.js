@@ -27725,21 +27725,6 @@
 	            _react2.default.createElement(
 	              'span',
 	              null,
-	              'Name: '
-	            ),
-	            ' ',
-	            _react2.default.createElement(
-	              'b',
-	              null,
-	              'Amazon'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'sender-detail' },
-	            _react2.default.createElement(
-	              'span',
-	              null,
 	              'Date recieved: '
 	            ),
 	            ' ',
@@ -27753,6 +27738,21 @@
 	                'th'
 	              ),
 	              ' April 2016'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Name: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Amazon'
 	            )
 	          )
 	        ),
@@ -27833,21 +27833,6 @@
 	            _react2.default.createElement(
 	              'span',
 	              null,
-	              'Name: '
-	            ),
-	            ' ',
-	            _react2.default.createElement(
-	              'b',
-	              null,
-	              'Flipkart'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'sender-detail' },
-	            _react2.default.createElement(
-	              'span',
-	              null,
 	              'Date recieved: '
 	            ),
 	            ' ',
@@ -27861,6 +27846,21 @@
 	                'th'
 	              ),
 	              ' April 2016'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Name: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Flipkart'
 	            )
 	          )
 	        )
