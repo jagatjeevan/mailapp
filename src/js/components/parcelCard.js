@@ -6,6 +6,9 @@ export default class ParcelCard extends React.Component {
     return(
       <div className='parcel-card-container'>
         <div className='name-card'>
+          <div className='status'>
+            <i></i>
+          </div>
           <div className='reciever-detail'>
             <div className='profile-image'>
               <img src={`${AppPaths.publicPath}img/logo.jpeg`}  width='70' height='70' className='img-circle' />
@@ -16,13 +19,16 @@ export default class ParcelCard extends React.Component {
             </div>
           </div>
           <div className='sender-detail'>
+            <span>Packet No.: </span> <b>Y1M2E1748</b>
+          </div>
+          <div className='sender-detail'>
+            <span>Date dispatched: </span> <b>Not Dispatched</b>
+          </div>
+          <div className='sender-detail'>
             <span>Name: </span> <b>Amazon</b>
           </div>
           <div className='sender-detail'>
             <span>Date recieved: </span> <b>10<sup>th</sup> April 2016</b>
-          </div>
-          <div className='sender-detail'>
-            <span>Packet No.: </span> <b>Y1M2E1748</b>
           </div>
         </div>
         <div className='name-card'>
@@ -39,13 +45,16 @@ export default class ParcelCard extends React.Component {
             </div>
           </div>
           <div className='sender-detail'>
-            <span>Name: </span> <b>Amazon</b>
+            <span>Packet No.: </span> <b>Y1M2E1748</b>
+          </div>
+          <div className='sender-detail'>
+            <span>Date dispatched: </span> <b>20<sup>th</sup> April 2016</b>
+          </div>
+          <div className='sender-detail'>
+            <span>Name: </span> <b>Flipkart</b>
           </div>
           <div className='sender-detail'>
             <span>Date recieved: </span> <b>10<sup>th</sup> April 2016</b>
-          </div>
-          <div className='sender-detail'>
-            <span>Packet No.: </span> <b>Y1M2E1748</b>
           </div>
         </div>
       </div>

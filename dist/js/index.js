@@ -27659,6 +27659,11 @@
 	          { className: 'name-card' },
 	          _react2.default.createElement(
 	            'div',
+	            { className: 'status' },
+	            _react2.default.createElement('i', null)
+	          ),
+	          _react2.default.createElement(
+	            'div',
 	            { className: 'reciever-detail' },
 	            _react2.default.createElement(
 	              'div',
@@ -27682,6 +27687,36 @@
 	                null,
 	                '+91 - 9740970977'
 	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Packet No.: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Y1M2E1748'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Date dispatched: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Not Dispatched'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -27718,21 +27753,6 @@
 	                'th'
 	              ),
 	              ' April 2016'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'sender-detail' },
-	            _react2.default.createElement(
-	              'span',
-	              null,
-	              'Packet No.: '
-	            ),
-	            ' ',
-	            _react2.default.createElement(
-	              'b',
-	              null,
-	              'Y1M2E1748'
 	            )
 	          )
 	        ),
@@ -27777,13 +27797,49 @@
 	            _react2.default.createElement(
 	              'span',
 	              null,
+	              'Packet No.: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              'Y1M2E1748'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              'Date dispatched: '
+	            ),
+	            ' ',
+	            _react2.default.createElement(
+	              'b',
+	              null,
+	              '20',
+	              _react2.default.createElement(
+	                'sup',
+	                null,
+	                'th'
+	              ),
+	              ' April 2016'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'sender-detail' },
+	            _react2.default.createElement(
+	              'span',
+	              null,
 	              'Name: '
 	            ),
 	            ' ',
 	            _react2.default.createElement(
 	              'b',
 	              null,
-	              'Amazon'
+	              'Flipkart'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -27805,21 +27861,6 @@
 	                'th'
 	              ),
 	              ' April 2016'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'sender-detail' },
-	            _react2.default.createElement(
-	              'span',
-	              null,
-	              'Packet No.: '
-	            ),
-	            ' ',
-	            _react2.default.createElement(
-	              'b',
-	              null,
-	              'Y1M2E1748'
 	            )
 	          )
 	        )

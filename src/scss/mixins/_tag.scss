@@ -1,4 +1,4 @@
-$tag-background: #fff;
+$tag-background: map-get($brand-colors, 'quaternary');
 %tag {
   position: absolute;
   bottom: 0;

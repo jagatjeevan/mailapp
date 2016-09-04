@@ -20,9 +20,9 @@ $app-spacer : map-get($spacer, 'spacer-20');
 $app-animation-duration: 5ms;
 
 // Box
-$box-background-color: map-get($brand-colors, 'quinary-color');
+$box-background-color: map-get($brand-colors, 'quaternary');
 
-$box-border-color: map-get($brand-colors, 'quinary-color');
+$box-border-color: map-get($brand-colors, 'quaternary');
 $box-border-width: 1px;
 $box-border: $box-border-color solid $box-border-width;
 

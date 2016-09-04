@@ -3,7 +3,7 @@
   bottom: 0;
   right: 0; }
   .name-card .status:before {
-    background: #fff;
+    background: #ccc;
     content: '';
     height: 300%;
     position: absolute;
@@ -472,7 +472,7 @@ textarea {
 
 .name-card {
   background: #e1e1e1;
-  border: solid 1px;
+  border: #ccc solid 1px;
   padding: 10px;
   margin: 0 20px 20px 0;
   position: relative;
@@ -489,7 +489,7 @@ textarea {
     margin-right: 10px; }
     .reciever-detail .profile-image img {
       border-radius: 50%;
-      border: solid 1px; }
+      border: #ccc solid 1px; }
   .reciever-detail .name-and-phone-number span {
     display: block;
     padding: 10px 0 0; }
