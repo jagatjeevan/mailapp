@@ -1,12 +1,12 @@
 // SlideUp
 @keyframes slideUp {
   from {
-    height: auto;
     display: block;
+    height: auto;
   }
   to {
-    height: 0;
     display: none;
+    height: 0;
     overflow: hidden;
   }
 }
@@ -14,12 +14,12 @@
 // SlideDown
 @keyframes slideDown {
   from {
-    height: 0;
     display: none;
+    height: 0;
     overflow: hidden;
   }
   to {
-    height: auto;
     display: block;
+    height: auto;
   }
 }

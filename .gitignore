@@ -2,4 +2,6 @@ node_modules
 .idea
 *.js.map
 *.css.map
+*.iml
 npm-debug.log
+

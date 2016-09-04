@@ -1,6 +1,6 @@
 .name-card .status {
-  position: absolute;
   bottom: 0;
+  position: absolute;
   right: 0; }
   .name-card .status:before {
     background: #ccc;
@@ -10,6 +10,26 @@
     transform: rotate(45deg) translateY(10px);
     width: 430%;
     z-index: 1; }
+
+.parcel-card-container, .reciever-detail, .add-parcel-form {
+  display: flex;
+  flex-wrap: wrap; }
+
+select, input[type='text'], input[type='email'],
+input [type='number'] {
+  border: 0;
+  padding: 10px;
+  width: 100%; }
+
+@font-face {
+  font-family: 'PT_Sans-Narrow';
+  font-weight: normal;
+  src: url("/public-assets/font/PT_Sans_Narrow/PT_Sans-Narrow-Web-Regular.ttf"); }
+
+@font-face {
+  font-family: 'PT_Sans-Narrow';
+  font-weight: bold;
+  src: url("/public-assets/font/PT_Sans_Narrow/PT_Sans-Narrow-Web-Bold.ttf"); }
 
 /*! normalize.css v4.2.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -383,21 +403,21 @@ textarea {
 
 @keyframes slideUp {
   from {
-    height: auto;
-    display: block; }
+    display: block;
+    height: auto; }
   to {
-    height: 0;
     display: none;
+    height: 0;
     overflow: hidden; } }
 
 @keyframes slideDown {
   from {
-    height: 0;
     display: none;
+    height: 0;
     overflow: hidden; }
   to {
-    height: auto;
-    display: block; } }
+    display: block;
+    height: auto; } }
 
 #header .logo-container {
   align-items: center;
@@ -424,8 +444,8 @@ textarea {
     border-right-color: #FFAD23; }
 
 #header .menu-switch {
-  font-size: 25px;
-  display: block; }
+  display: block;
+  font-size: 25px; }
 
 #header .menu-links {
   display: none; }
@@ -466,24 +486,29 @@ textarea {
     padding-right: 30px; }
 
 .parcel-card-container {
-  display: flex;
-  margin: 20px;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  margin: 20px; }
+  @media screen and (max-width: 550px) {
+    .parcel-card-container {
+      justify-content: center; }
+      .parcel-card-container .name-card {
+        margin-right: 0;
+        width: 100%; } }
 
 .name-card {
   background: #e1e1e1;
   border: #ccc solid 1px;
-  padding: 10px;
   margin: 0 20px 20px 0;
-  position: relative;
-  overflow: hidden; }
+  min-width: 240px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative; }
   .name-card .status .icon-ok {
+    color: green;
     position: relative;
-    z-index: 2;
-    color: green; }
+    z-index: 2; }
 
 .reciever-detail {
-  display: flex;
   margin-bottom: 10px; }
   .reciever-detail .profile-image {
     margin-right: 10px; }
@@ -495,22 +520,55 @@ textarea {
     padding: 10px 0 0; }
 
 .sender-detail {
+  border-bottom: 1px solid #eee;
   display: flex;
   font-size: 0.8em;
   margin-bottom: 10px;
-  border-bottom: 1px solid #eee;
   padding-bottom: 5px; }
   .sender-detail span,
   .sender-detail b {
     flex-grow: 1;
     width: 50%; }
 
+.add-parcel-container {
+  background: #e1e1e1;
+  margin: 20px auto;
+  max-width: 770px;
+  padding: 20px; }
+  .add-parcel-container header {
+    border-bottom: #ccc solid 1px;
+    border-bottom: 1px solid #eee;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 5px; }
+  .add-parcel-container footer {
+    padding-top: 20px;
+    text-align: right; }
+
+.form-container {
+  margin: 0 5px 20px;
+  min-width: 230px; }
+
+.add-parcel-form {
+  justify-content: space-between; }
+  .add-parcel-form input[type='text'],
+  .add-parcel-form input[type='email'],
+  .add-parcel-form input[type='number'] {
+    display: block;
+    margin: 5px 0; }
+
+* {
+  box-sizing: border-box; }
+
 html,
 body {
   height: 100%; }
 
 body {
-  background-color: #efefef; }
+  background-color: #efefef;
+  font-family: 'PT_Sans-Narrow';
+  font-size: 18px; }
 
 a {
   text-decoration: none; }
@@ -524,8 +582,10 @@ li {
 [class^='icon'] {
   cursor: pointer; }
 
-button {
+button,
+.button {
   background-color: #369;
   border: 0;
   color: #fff;
+  min-width: 110px;
   padding: 10px 15px; }

@@ -1,7 +1,7 @@
 $tag-background: map-get($brand-colors, 'quaternary');
 %tag {
-  position: absolute;
   bottom: 0;
+  position: absolute;
   right: 0;
   &:before {
     background: $tag-background;

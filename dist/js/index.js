@@ -83,7 +83,7 @@
 	  { className: 'app-contianer' },
 	  _react2.default.createElement(
 	    _reactRouter.Router,
-	    { history: newbrowserHistory },
+	    { history: _reactRouter.browserHistory },
 	    _react2.default.createElement(_reactRouter.Route, { path: _path2.default.homePage, component: _homepage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: _path2.default.addParcelPage, component: _addParcelPage2.default })
 	  )
@@ -27897,10 +27897,6 @@
 
 	var _header2 = _interopRequireDefault(_header);
 
-	var _searchBar = __webpack_require__(242);
-
-	var _searchBar2 = _interopRequireDefault(_searchBar);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27924,7 +27920,97 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_header2.default, null)
+	        _react2.default.createElement(_header2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'add-parcel-container' },
+	          _react2.default.createElement(
+	            'header',
+	            null,
+	            'Add the Parcel below:'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'add-parcel-form' },
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form-container' },
+	              _react2.default.createElement(
+	                'label',
+	                { htmlFor: 'name' },
+	                'Name',
+	                _react2.default.createElement('input', { type: 'text', id: 'name', placeholder: 'Name' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form-container' },
+	              _react2.default.createElement(
+	                'label',
+	                { htmlFor: 'email' },
+	                'Email Address',
+	                _react2.default.createElement('input', { type: 'email', id: 'email', placeholder: 'mike@gmail.com' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form-container' },
+	              _react2.default.createElement(
+	                'label',
+	                { htmlFor: 'phone' },
+	                'Phone Number',
+	                _react2.default.createElement('input', { type: 'number', id: 'phone', placeholder: '124132758' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'form-container' },
+	              _react2.default.createElement(
+	                'label',
+	                { htmlFor: 'dealer' },
+	                'Dealer',
+	                _react2.default.createElement(
+	                  'select',
+	                  { id: 'dealer' },
+	                  _react2.default.createElement(
+	                    'option',
+	                    null,
+	                    'Amazon'
+	                  ),
+	                  _react2.default.createElement(
+	                    'option',
+	                    null,
+	                    'Flipkart'
+	                  ),
+	                  _react2.default.createElement(
+	                    'option',
+	                    null,
+	                    'Ebay'
+	                  ),
+	                  _react2.default.createElement(
+	                    'option',
+	                    null,
+	                    'Snapdeal'
+	                  ),
+	                  _react2.default.createElement(
+	                    'option',
+	                    null,
+	                    'Shopclues'
+	                  )
+	                )
+	              )
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'footer',
+	            null,
+	            _react2.default.createElement(
+	              'button',
+	              null,
+	              'Add Parcel'
+	            )
+	          )
+	        )
 	      );
 	    }
 	  }]);
