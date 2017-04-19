@@ -12,6 +12,7 @@ export default class App extends React.Component {
         <Header />
         <SearchBar />
         <ParcelCard />
+        hello
       </div>
     );
   }
